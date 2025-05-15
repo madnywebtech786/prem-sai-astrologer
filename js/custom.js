@@ -26,4 +26,12 @@
   
     animatedElements.forEach(el => observer.observe(el));
   });
-  
+ $(document).ready(function () {
+      $('.testimonial-slider').slick({
+        autoplay: true,
+        autoplaySpeed: 4000,
+        dots: true,
+        arrows: false,
+        adaptiveHeight: true
+      });
+    });
